@@ -28,6 +28,7 @@ def explore_data():
     # "375 Valencia St, San Francisco, CA, 94103"
     # Note: make sure to use double quotes for string, single quote for dictionary keys 
     print(f"{restaurant_1['address']}, {restaurant_1['city']}, {restaurant_1['state']}, {restaurant_1['zip_code']}")
+    # Note: look very carefully at what information we need to print. and its formatting
     
 
 def favorite_restaurant():
@@ -70,5 +71,5 @@ def clean_print():
     #       url: https://www.yelp.com/biz/four-barrel-coffee-san-francisco`
     # etc etc
 
-    for key in restaurant_1:
-        print(f"{key}: {restaurant_1[key]}")
+    for key, val in restaurant_1.items():
+        print(f"{key}: {val}")
